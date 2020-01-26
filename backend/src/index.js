@@ -7,7 +7,8 @@ const app = express();
 // Fazendo conexão com o banco de dados
 mongoose.connect("mongodb+srv://omnistack:omnistack@pessoal-4bwpv.mongodb.net/devradar?retryWrites=true&w=majority", {
     useUnifiedTopology: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useCreateIndex: true
 });
 
 // Definindo o formato das requisições como JSON
